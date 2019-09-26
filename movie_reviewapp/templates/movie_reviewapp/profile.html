@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div style="margin-top:50px"></div>
+                <div class="row">
+                    <div class='col-3'></div>
+                    <div class="col-6">
+                        <div class="card rounded-0">
+                              <div class="card-header">
+                                  <h3 class="mb-0">Profile</h3>
+                              </div>
+
+                            <!-- Start messages alert  -->
+                                <div class="form-group">
+                                    {% if messages %}
+                                    <ul class="messages">
+                                    {% for message in messages %}
+                                        <div class="alert alert-success alert-dismissible">
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                            {{ message }}
+                                        </div>
+                                    {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </div>
+                            <!-- End messages alert  -->
+                            <div class="card-body">
+                                <p><b> Username :</b>  {{ user }}</p>
+                                <p><b> First name :</b> {{ user.first_name }}</p>
+                                <p><b> Last name :</b> {{ user.last_name }}</p>
+                                <p><b> Email address :</b> {{ user.email }}</p>
+
+                                <a href="/movie_review/edit_profile">
+                                <button type="button" class="btn btn-success">Edit Profile</button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    </div>
+    <div style="margin-top: 167px"></div>
+
+{% endblock %}
+
+

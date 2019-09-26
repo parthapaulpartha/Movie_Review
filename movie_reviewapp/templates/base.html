@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load staticfiles %}
+    <!--<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">-->
+    <!-- Bootstrap CSS -->
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+         <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <style>
+            /*---- Start go to top ------- */
+                body {
+                  position: relative;
+                }
+
+                .intro-copy {
+                  padding: 1em;
+                  margin: 50vh auto;
+                  max-width: 15em;
+                  font-family: Helvetica;
+                  font-weight: lighter;
+                  font-size: 2em;
+                  line-height: 1.2;
+                  text-align: center;
+                }
+
+                .top-link {
+                  transition: all .25s ease-in-out;
+                  position: fixed;
+                  bottom: 0;
+                  right: 0;
+                  display: inline-flex;
+
+                  cursor: pointer;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 3em 3em 0;
+                  border-radius: 50%;
+                  padding: .25em;
+                  width: 80px;
+                  height: 80px;
+                  background-color: #F8F8F8;
+
+                  &.show {
+                    visibility: visible;
+                    opacity: 1;
+                  }
+
+                  &.hide {
+                    visibility: hidden;
+                    opacity: 0;
+                  }
+
+                    svg {
+                        fill: #000;
+                        width: 24px;
+                        height: 12px;
+                    }
+
+                    &:hover {
+                        background-color: #E8E8E8;
+
+                        svg {
+                            fill: #000000;
+                        }
+                    }
+                }
+
+                // Text meant only for screen readers.
+                .screen-reader-text {
+                    position: absolute;
+                    clip-path: inset(50%);
+                    margin: -1px;
+                    border: 0;
+                    padding: 0;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                    word-wrap: normal !important;
+                    clip: rect(1px, 1px, 1px, 1px);
+
+                    &:focus {
+                        display: block;
+                        top: 5px;
+                        left: 5px;
+                        z-index: 100000; // Above WP toolbar
+                        clip-path: none;
+                        background-color: #eee;
+                        padding: 15px 23px 14px;
+                        width: auto;
+                        height: auto;
+                        text-decoration: none;
+                        line-height: normal;
+                        color: #444;
+                        font-size: 1em;
+                        clip: auto !important;
+                    }
+                }
+            /*---- End go to top ------- */
+
+    </style>
+
+    <title> Movie review </title>
+
+    {% block head %}
+
+    {% endblock %}
+</head>
+
+<body>
+
+    <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        {% if request.user.is_authenticated %}
+        <a class="navbar-brand" href="/movie_review/home/">Movie review</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/movie_review/movie_list/">Movie List</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <form class="form-inline" action="/movie_review/search/" method="POST">
+                    {% csrf_token %}
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="search" placeholder="Movie Name" style="width:800px">
+                        <button type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/movie_review/profile"><i class="fas fa-user"></i> {{ request.user }}</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/movie_review/logout">Log out <i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        {% else %}
+
+        <a class="navbar-brand" href="/movie_review/home/">Movie review</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link disabled" href="/onlineshop/man/">Man</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/movie_review/registration">Registration</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/movie_review/login">Log in <i class="fas fa-sign-in-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        {% endif %}
+    </nav>
+    <!-- end navbar -->
+
+    {% block body %}
+
+    {% endblock %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // Set a variable for our button element.
+        const scrollToTopButton = document.getElementById('js-top');
+
+        // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+        const scrollFunc = () => {
+          // Get the current scroll value
+          let y = window.scrollY;
+
+          // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+          if (y > 0) {
+            scrollToTopButton.className = "top-link show";
+          } else {
+            scrollToTopButton.className = "top-link hide";
+          }
+        };
+
+        window.addEventListener("scroll", scrollFunc);
+
+        const scrollToTop = () => {
+          // Let's set a variable for the number of pixels we are from the top of the document.
+          const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+          // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
+          // We'll also animate that scroll with requestAnimationFrame:
+          // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+          if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            // ScrollTo takes an x and a y coordinate.
+            // Increase the '10' value to get a smoother/slower scroll!
+            window.scrollTo(0, c - c / 10);
+          }
+        };
+
+        // When the button is clicked, run our ScrolltoTop function above!
+        scrollToTopButton.onclick = function(e) {
+          e.preventDefault();
+          scrollToTop();
+        }
+    </script>
+
+</body>
+
+<!-- Footer -->
+<footer class = "panel-footer  bg-secondary ">
+
+  <div class=" text-center py-3">
+      <a href="/movie_review/about/" class="btn btn-secondary">About Us</a>
+      <a href="//www.facebook.com" class="btn btn-secondary"> Facebook</a>
+      <a href="//twitter.com" class="btn btn-secondary">Twitter</a>
+      <a href="//www.whatsapp.com" class=" btn btn-secondary">Whatsapp</a>
+  </div>
+
+</footer>
+<!-- Footer -->
+
+</html>

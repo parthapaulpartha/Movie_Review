@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+        <!-- Start messages alert  -->
+        <ul class="form-group">
+            {% if messages %}
+            <ul class="messages">
+            {% for message in messages %}
+                <li style="color: red">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    {{ message }}
+                </li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+        </ul>
+    <!-- End messages alert  -->
+
+   <!-- View search  -->
+    <div class="container">
+
+
+        <div class="row">
+            {% if sr %}
+           {% for s in sr %}
+            <div class="col-4">
+                <div class="card" style="width: 23rem; ">
+                    <a href="/movie_review/movie_detail/{{s.id}}/{{s.movie_name}}/">
+                        <img src="{{ s.movie_image.url }}" class="card-img-top" width="100%" height="350px" alt="...">
+                    </a>
+                  <div class="card-body">
+                    <h4 class="card-title">{{ s.movie_name }}</h4>
+                      <p class="card-text">Movie release date <b>:</b> {{ s.movie_release_date }}<br>
+                          Movie Type <b>:</b> {{ s.movie_type }}</br>
+                          Movie Rating <b>:</b> {{ s.movie_rating }}
+                    </p>
+                  </div>
+                </div><br>
+            </div>
+               {% endfor %}
+       {% endif %}
+        </div>
+   </div>
+</div>
+<div style="margin-top: 11px"></div>
+{% endblock %}

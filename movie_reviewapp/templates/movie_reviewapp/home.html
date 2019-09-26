@@ -1,0 +1,456 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block head %}
+{% load staticfiles %}
+
+    <style>
+
+    /*---- Start for star rating ------- */
+            .rating {
+          float:left;
+        }
+
+        /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+          follow these rules. Every browser that supports :checked also supports :not(), so
+          it doesn’t make the test unnecessarily selective */
+        .rating:not(:checked) > input {
+            position:absolute;
+            top:-9999px;
+            clip:rect(0,0,0,0);
+        }
+
+        .rating:not(:checked) > label {
+            float:right;
+            width:1em;
+            /* padding:0 .1em; */
+            overflow:hidden;
+            white-space:nowrap;
+            cursor:pointer;
+            font-size:300%;
+            /* line-height:1.2; */
+            color:gray;
+        }
+
+        .rating:not(:checked) > label:before {
+            content: '★ ';
+        }
+
+        .rating > input:checked ~ label {
+            color: dodgerblue;
+
+        }
+
+        .rating:not(:checked) > label:hover,
+        .rating:not(:checked) > label:hover ~ label {
+            color: dodgerblue;
+
+        }
+
+        .rating > input:checked + label:hover,
+        .rating > input:checked + label:hover ~ label,
+        .rating > input:checked ~ label:hover,
+        .rating > input:checked ~ label:hover ~ label,
+        .rating > label:hover ~ input:checked ~ label {
+            color: dodgerblue;
+
+        }
+
+        .rating > label:active {
+            position:relative;
+            top:2px;
+            left:2px;
+        }
+    /*---- End for star rating ------- */
+
+
+    /*---- Start for parallax ------- */
+
+     .parallax{
+     background: url('{% static 'images/movie-reviews.jpg' %}') no-repeat ;
+     background-size: cover;
+     background-attachment: fixed;
+     height: 350px;
+    }
+    /*---- End for parallax ------- */
+    </style>
+{% endblock %}
+
+{% block body %}
+    <!------ start slider ------>
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                {% for image in images %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="{{ image.image.url }}" class="d-block" style="height: 400px; width: 100%" alt="">
+                </div>
+                {% endfor %}
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    <!-- End slider -->
+
+
+    <div class="container">
+        <div style="margin-top:20px"></div>
+        <img src="{% static 'images/actor.jpg'%}" style="height:300px;width: 293px">
+        <img src="{% static 'images/oscar.jpg'%}" style="height:400px; width: 513px">
+        <img src="{% static 'images/actress.jpg'%}" style="height:300px;width: 294px"><br>
+
+        <img src="{% static 'images/acting.jpg'%}" style="height:250px;width: 292px">
+        <img src="{% static 'images/bf.jpg'%}" style="height:250px;width: 255px">
+        <img src="{% static 'images/gf.jpg'%}" style="height:250px;width: 255px">
+        <img src="{% static 'images/ifa.png'%}" style="height:250px;width: 292px">
+    </div><br>
+
+    <!------ Start slider 4 in 1 ------->
+    <div class="container">
+        <h2><center><i>Actor</i></center></h2>
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example1" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active ">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'actor/a1.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'actor/a2.png' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'actor/a3.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'actor/a4.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'actor/a5.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'actor/a6.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'actor/a7.png' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'actor/a8.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+              </div>
+
+            </div>
+            <!--/.Second slide-->
+          </div>
+          <!--/.Slides-->
+
+          <a class="carousel-control-prev" href="#multi-item-example1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#multi-item-example1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div><br>
+
+    <div class="container">
+        <h2><center><i>Actress</i></center></h2>
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example2" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active ">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'actress/h1.png' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'actress/h2.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'actress/h3.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'actress/h4.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'actress/h5.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'actress/h6.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'actress/h7.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'actress/h8.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+              </div>
+
+            </div>
+            <!--/.Second slide-->
+          </div>
+          <!--/.Slides-->
+
+          <a class="carousel-control-prev" href="#multi-item-example2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#multi-item-example2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+
+    <!------ Start parallax ----->
+    <div class="">
+            <div class="parallax">
+
+            </div>
+        </div>
+    <!------ End parallax ----->
+
+    <div class="container">
+        <h2><center><i>Director</i></center></h2>
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example3" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active ">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'director/d1.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'director/d2.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'director/d3.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+
+                    <div class="col-md-3">
+                        <img class="card-img-top" src="{% static 'director/d4.jpg' %}" style="height:250px;"
+                          alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'director/d5.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'director/d6.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'director/d7.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="card-img-top" src="{% static 'director/d8.jpg' %}"style="height:250px;"
+                      alt="Card image cap">
+                </div>
+              </div>
+
+            </div>
+            <!--/.Second slide-->
+          </div>
+          <!--/.Slides-->
+
+          <a class="carousel-control-prev" href="#multi-item-example3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#multi-item-example3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div><br>
+    <!------ End slider 4 in 1 ------->
+
+
+    <!------ start slider normal ------->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="">
+                    <!--Carousel Wrapper-->
+                    <h2><center><i>Movies</i></center></h2>
+                    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" >
+
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+
+                          {% for movie in movie_review %}
+                        <div class="carousel-item {% if forloop.first %} active {% endif %}" >
+                            <div class="">
+                                <div class="">
+                                    <img class="card-img-top" src="{{ movie.movie_image.url }}" style="height:350px" alt="Card image cap">
+                                </div>
+                            </div>
+                        </div>
+                          {% endfor %}
+                      </div>
+
+                      <!--/.Slides-->
+
+                      <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                </div>
+            </div>
+        </div>
+    </div><br>
+     <!------ End slider normal ------->
+
+
+    <!----------- Start star rating ------->
+    <!--<div class="card bg-light text-dark text-center" style="max-width: 100rem;">
+            <div class="card-header "><h5>GIVE US FEEDBACK</h5></div>
+            <div class="row mx-auto">
+                <div class="rating ">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Best">5 stars</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Better">4 stars</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="very good">3 stars</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Good">2 stars</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Bad">1 star</label>
+                </div>
+            </div>
+        </div>-->
+    <!----------- End star rating ------->
+
+
+    <!----------- Start contact ------->
+        <div class="container bg-light">
+            <h3><center><i>Contact Us</i></center></h3>
+
+            <div class="row">
+                <div class='col'>
+                    <div class="card text-dark text-center bg-light" style="height:500px">
+                        <div style="margin-top:180px"></div>
+                        <div class=" "><h5>GIVE US YOUR FEEDBACK</h5></div>
+                            <div class="row  mx-auto">
+                                <div class="rating ">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Best">5 stars</label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Better">4 stars</label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="very good">3 stars</label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Good">2 stars</label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Bad">1 star</label>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <p><center>If you have any Suggestion or complain write here.</center></p>
+                    <form class="field-title" action="" method="post">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0"> Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <!----------- End Contract ------->
+
+
+    <!------ start Go to top ------->
+    <a class="top-link hide " href="" id="js-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+            <i class="screen-reader-text fas fa-chevron-up "></i>
+         </a>
+    <!------ End Go to top ------->
+
+{% endblock %}

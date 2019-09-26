@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7bb7605e-6ff8-423c-9e7f-039441b6a0bc" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2567">
+              <caret line="173" column="43" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="270" column="17" selection-start-line="270" selection-start-column="17" selection-end-line="270" selection-end-column="17" />
+              <folding>
+                <element signature="e#101#1952#0" />
+                <element signature="e#2028#3079#0" />
+                <element signature="e#2384#2418#0" expanded="true" />
+                <element signature="e#3147#3170#0" expanded="true" />
+                <element signature="e#3228#3261#0" expanded="true" />
+                <element signature="e#3313#3347#0" expanded="true" />
+                <element signature="e#3401#3434#0" expanded="true" />
+                <element signature="e#3492#3525#0" expanded="true" />
+                <element signature="e#3574#3607#0" expanded="true" />
+                <element signature="e#3656#3689#0" expanded="true" />
+                <element signature="e#3739#3772#0" expanded="true" />
+                <element signature="e#3836#6826#0" />
+                <element signature="e#4362#4383#0" expanded="true" />
+                <element signature="e#4587#4608#0" expanded="true" />
+                <element signature="e#4812#4833#0" expanded="true" />
+                <element signature="e#5037#5058#0" expanded="true" />
+                <element signature="e#5433#5454#0" expanded="true" />
+                <element signature="e#5641#5662#0" expanded="true" />
+                <element signature="e#5849#5870#0" expanded="true" />
+                <element signature="e#6057#6078#0" expanded="true" />
+                <element signature="e#6836#9844#0" />
+                <element signature="e#7366#7387#0" expanded="true" />
+                <element signature="e#7593#7614#0" expanded="true" />
+                <element signature="e#7820#7841#0" expanded="true" />
+                <element signature="e#8047#8068#0" expanded="true" />
+                <element signature="e#8445#8466#0" expanded="true" />
+                <element signature="e#8655#8676#0" expanded="true" />
+                <element signature="e#8865#8886#0" expanded="true" />
+                <element signature="e#9075#9096#0" expanded="true" />
+                <element signature="e#9885#9969#0" />
+                <element signature="e#10008#13025#0" />
+                <element signature="e#10540#10561#0" expanded="true" />
+                <element signature="e#10768#10789#0" expanded="true" />
+                <element signature="e#10996#11017#0" expanded="true" />
+                <element signature="e#11224#11245#0" expanded="true" />
+                <element signature="e#11623#11644#0" expanded="true" />
+                <element signature="e#11834#11855#0" expanded="true" />
+                <element signature="e#12045#12066#0" expanded="true" />
+                <element signature="e#12256#12277#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_review/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+              <folding>
+                <element signature="e#636#668#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+              <folding>
+                <element signature="e#636#668#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/movie_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#ul#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2074">
+              <caret line="252" column="28" selection-start-line="252" selection-start-column="28" selection-end-line="252" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/movie_review/urls.py" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/movie_info.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/edit_profile.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/profile.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/registration.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/login.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/movie_review.html" />
+        <option value="$PROJECT_DIR$/movie_review/settings.py" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/movie_detail.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/models.py" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/admin.py" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/forms.py" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/views.py" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/base.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/about_us.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/home.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/search.html" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/urls.py" />
+        <option value="$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/movie_list.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="736" />
+    <option name="y" value="30" />
+    <option name="width" value="640" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="movie_review" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movie_review" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movie_review" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movie_review" type="462c0819:PsiDirectoryNode" />
+              <item name="__shared__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movie_review" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movie_review" type="462c0819:PsiDirectoryNode" />
+              <item name="movie_review" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movie_review" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movie_review" type="462c0819:PsiDirectoryNode" />
+              <item name="movie_reviewapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movie_review" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movie_review" type="462c0819:PsiDirectoryNode" />
+              <item name="movie_reviewapp" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movie_review" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movie_review" type="462c0819:PsiDirectoryNode" />
+              <item name="movie_reviewapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="movie_review" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movie_review" type="462c0819:PsiDirectoryNode" />
+              <item name="movie_reviewapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="movie_reviewapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\my project\movie_review" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\my project\movie_review\__shared__\images" />
+      <recent name="C:\my project\movie_review\movie_reviewapp\templates\movie_reviewapp" />
+      <recent name="C:\my project\movie_review\__shared__\director" />
+      <recent name="C:\my project\movie_review\__shared__\actress" />
+      <recent name="C:\my project\movie_review\__shared__\actor" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7bb7605e-6ff8-423c-9e7f-039441b6a0bc" name="Default Changelist" comment="" />
+      <created>1568625731947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568625731947</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1532738" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.18657938" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1532738" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.22422259" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/change_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/edit_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/migrations/0002_movie_reviews.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/migrations/0003_auto_20190920_2132.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/movie_review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_review/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="32" selection-start-line="134" selection-end-line="134" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/movie_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="27" column="119" selection-start-line="27" selection-start-column="93" selection-end-line="27" selection-end-column="119" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="62" column="81" selection-start-line="62" selection-start-column="81" selection-end-line="62" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__shared__/images/about_us.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/about_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2567">
+          <caret line="173" column="43" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_review/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="252" column="28" selection-start-line="252" selection-start-column="28" selection-end-line="252" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#ul#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/movie_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_reviewapp/templates/movie_reviewapp/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="270" column="17" selection-start-line="270" selection-start-column="17" selection-end-line="270" selection-end-column="17" />
+          <folding>
+            <element signature="e#101#1952#0" />
+            <element signature="e#2028#3079#0" />
+            <element signature="e#2384#2418#0" expanded="true" />
+            <element signature="e#3147#3170#0" expanded="true" />
+            <element signature="e#3228#3261#0" expanded="true" />
+            <element signature="e#3313#3347#0" expanded="true" />
+            <element signature="e#3401#3434#0" expanded="true" />
+            <element signature="e#3492#3525#0" expanded="true" />
+            <element signature="e#3574#3607#0" expanded="true" />
+            <element signature="e#3656#3689#0" expanded="true" />
+            <element signature="e#3739#3772#0" expanded="true" />
+            <element signature="e#3836#6826#0" />
+            <element signature="e#4362#4383#0" expanded="true" />
+            <element signature="e#4587#4608#0" expanded="true" />
+            <element signature="e#4812#4833#0" expanded="true" />
+            <element signature="e#5037#5058#0" expanded="true" />
+            <element signature="e#5433#5454#0" expanded="true" />
+            <element signature="e#5641#5662#0" expanded="true" />
+            <element signature="e#5849#5870#0" expanded="true" />
+            <element signature="e#6057#6078#0" expanded="true" />
+            <element signature="e#6836#9844#0" />
+            <element signature="e#7366#7387#0" expanded="true" />
+            <element signature="e#7593#7614#0" expanded="true" />
+            <element signature="e#7820#7841#0" expanded="true" />
+            <element signature="e#8047#8068#0" expanded="true" />
+            <element signature="e#8445#8466#0" expanded="true" />
+            <element signature="e#8655#8676#0" expanded="true" />
+            <element signature="e#8865#8886#0" expanded="true" />
+            <element signature="e#9075#9096#0" expanded="true" />
+            <element signature="e#9885#9969#0" />
+            <element signature="e#10008#13025#0" />
+            <element signature="e#10540#10561#0" expanded="true" />
+            <element signature="e#10768#10789#0" expanded="true" />
+            <element signature="e#10996#11017#0" expanded="true" />
+            <element signature="e#11224#11245#0" expanded="true" />
+            <element signature="e#11623#11644#0" expanded="true" />
+            <element signature="e#11834#11855#0" expanded="true" />
+            <element signature="e#12045#12066#0" expanded="true" />
+            <element signature="e#12256#12277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

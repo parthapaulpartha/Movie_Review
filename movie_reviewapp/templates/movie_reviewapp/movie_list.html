@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="container" xmlns="http://www.w3.org/1999/html">
+        <div style="margin-top:20px"></div>
+
+        <div class="row">
+            {% for m in movie %}
+            <div class="col">
+                <div class="card" style="width: 21.8rem;">
+                    <a href="/movie_review/movie_detail/{{m.id}}/{{m.movie_name}}/">
+                        <img src="{{ m.movie_image.url }}" class="card-img-top" width="100%" height="200px" alt="...">
+                    </a>
+                  <div class="card-body">
+                    <h4 class="card-title">{{ m.movie_name }}</h4>
+                      <p class="card-text">Movie release date <b>:</b> {{ m.movie_release_date }}<br>
+                          Movie Type <b>:</b> {{ m.movie_type }}</br>
+                          Movie Rating <b>:</b> {{ m.movie_rating }}
+                    </p>
+                  </div>
+                </div><br>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!------ start Go to top ------->
+     <a class="top-link hide" href="" id="js-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <i class="screen-reader-text fas fa-chevron-up"></i>
+     </a>
+    <!------ End Go to top ------->
+{% endblock %}
+

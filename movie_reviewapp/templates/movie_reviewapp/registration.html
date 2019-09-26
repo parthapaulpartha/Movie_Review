@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block head %}
+{% load staticfiles %}
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+            <div style="margin-top:20px"></div>
+                <div class="row">
+                      <div class="col-sm-6" >
+                           <img src="{% static 'images/movie.png' %}" style="height:650px ; width: 100%">
+                      </div>
+
+                      <div class="col-sm-6" >
+                          <div class="card rounded-0">
+                              <div class="card-header">
+                                  <center><h3 class="mb-0">Registretion</h3></center>
+                              </div>
+                              <!-- Start messages alert-->
+                              <div class="form-group">
+                                  {% if messages %}
+                                  <ul class="messages">
+                                      {% for message in messages %}
+                                  <div class="alert alert-success alert-dismissible">
+                                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                      {{ message }}
+                                  </div>
+                                      {% endfor %}
+                                  </ul>
+                                  {% endif %}
+                              </div>
+                              <!-- End messages alert-->
+                              <div class="card-body">
+                                  <form method="post">
+                                      <!--Cross-site request forgery-->
+                                      {% csrf_token %}
+                                      {{ form|crispy }}
+
+                                      <button type="submit" class="btn btn-outline-info my-2 my-sm-0"> Registration </button>
+                                  </form>
+                              </div>
+
+                              <div class="card-footer">
+                                     <small><strong>Already have an account. <a href="/movie_review/login/"> Log in</a></strong></small>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+    </div><br>
+
+{% endblock %}

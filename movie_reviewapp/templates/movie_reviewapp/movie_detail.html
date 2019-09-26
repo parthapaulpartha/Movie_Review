@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div style="margin-top:20px"></div>
+
+    <!-- Start View Movie details -->
+        <div class="row">
+            {% for movie in movie_info %}
+            <div class="col-sm-2" ></div>
+            <div class="col-sm-8" >
+                <div class="card rounded-0">
+                    <div class="card-header">
+                        <center><h3 class="mb-0">{{ movie.movie_name }}</h3></center>
+                    </div>
+                    <div class="card-body">
+                                  <p> Movie release date : {{ movie.movie_release_date }}</p>
+                                  <p> Movie Duration : {{ movie.movie_duration }}</p>
+                                  <p> Movie Type : {{ movie.movie_type }}</p>
+                                  <p> Movie Director : {{ movie.movie_director }}</p>
+                                  <p> Movie Cast : {{ movie.movie_cast }}</p>
+                                  <p> Movie Rating : {{ movie.movie_rating }}</p>
+                                  <p> Movie Story : {{ movie.movie_story }}</p>
+                                  <p> Movie Image : <img src=" {{ movie.movie_image.url }} " width="80%" height="400px"> </p>
+                                  <p> Review Date : {{ movie.timestamp }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div><br>
+    <!-- End View Movie details -->
+
+    <!-- Start Comment View -->
+        <div class="col-sm-15" >
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <p class="mb-0">{{ getcomment.count }} Reviews</p>
+                </div>
+            </div>
+        </div><br>
+        <div class="">
+            {% for comment in getcomment %}
+            <p> Review comment: {{ comment.comment_review }}</p>
+            <p> Rating: {{ comment.rating }}</p>
+            <div class="row">
+                <div class="col">
+                    <blockquote class="blockquote">
+                        <footer class="blockquote-footer">By <cite title="Source Title">{{ comment.name }}</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col">
+                    <blockquote class="blockquote text-right">
+                        <footer class="blockquote-footer"><cite title="Source Title">{{ comment.timestamp }}</cite></footer>
+                    </blockquote>
+                </div>
+            </div><hr>
+            {% endfor %}
+        </div>
+    <!-- End Comment View -->
+
+    <!-- Start review Comment form -->
+        <div class="col-sm-15" >
+            <div class="card rounded-0">
+                <div class="card-header">
+                    <center><h3 class="mb-0">Review Comment</h3></center>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <button type="submit" class="btn btn-outline-info my-2 my-sm-0"> Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div><br>
+    <!-- End review Comment form -->
+{% endblock %}
+

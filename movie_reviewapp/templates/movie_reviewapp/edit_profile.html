@@ -1,0 +1,37 @@
+{% extends 'base.html' %}}
+{% load crispy_forms_tags %}
+
+{% block head %}
+{% load staticfiles %}
+{% endblock %}
+
+{% block body %}
+        <div class="container">
+            <div style="margin-top:20px"></div>
+                <div class="row">
+                    <div class='col-3'></div>
+                    <div class="col-6">
+                        <div class="card rounded-0">
+                            <div class="card-header">
+                                <h3 class="mb-0">Update profile</h3>
+                            </div>
+
+                                <div class="card-body">
+                                    <form class="site-form" method="post" enctype="multipart/form-data">
+                                       {% csrf_token %}
+                                        {{ form_u|crispy }}
+
+                                        <button type="submit" class="btn btn-info"> Submit </button><br><br>
+                                    </form>
+                                    <a href="/movie_review/change_password">
+                                        <button type="button" class="btn btn-success">Change Password</button>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div><br>
+
+{% endblock %}
+
+
